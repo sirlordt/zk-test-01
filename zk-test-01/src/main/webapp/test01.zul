@@ -1,48 +1,48 @@
 <zk>
   <window border="normal" title="hello">
-          <vlayout>
-	          <label id="popupLabel" value="popup label"/>
-            <textbox id="popupText" value=""/>
-          </vlayout>
+    <vlayout>
+      <label id="popupLabel" value="popup label" />
+      <textbox id="popupText" value="" />
+    </vlayout>
 
-  	<popup id="popup1" onOpen="popupText.value = label_0_1.value;">
-       <window border="normal" title="popop window" width="400px" height="500px">
-	  </window>
+    <popup id="popup1" onOpen="popupText.value = label_0_1.value;">
+      <window border="normal" title="popop window" width="400px" height="500px"></window>
     </popup>
     <listbox tooltip="popup1" width="100%" height="50%">
       <listitem height="30px">
         <listcell>
-          <label value="0.0" id="label_0_0" onMouseOver='popupLabel.value = label_0_0.value;'/>
+          <label value="0.0" id="label_0_0" onMouseOver='popupLabel.value = label_0_0.value;' />
         </listcell>
         <listcell>
-          <label value="0.1" id="label_0_1" onMouseOver="popupLabel.value = label_0_1.value;"/>
+          <label value="0.1" id="label_0_1" onMouseOver="popupLabel.value = label_0_1.value;" />
         </listcell>
         <listcell>
-          <label value="0.2" id="label_0_2" onMouseOver="popupLabel.value = label_0_2.value;"/>
+          <label value="0.2" id="label_0_2" onMouseOver="popupLabel.value = label_0_2.value;" />
         </listcell>
         <listcell>
-          <label value="0.3" id="label_0_3" onMouseOver="popupLabel.value = label_0_3.value;"/>
+          <label value="0.3" id="label_0_3" onMouseOver="popupLabel.value = label_0_3.value;" />
         </listcell>
         <listcell>
-          <label value="0.4" id="label_0_4" onMouseOver="popupLabel.value = label_0_4.value;"/>
+          <label value="0.4" id="label_0_4" onMouseOver="popupLabel.value = label_0_4.value;" />
         </listcell>
       </listitem>
       <listitem>
         <listcell>
-          <label value="1.0" id="label_1_0" onMouseOver="popupLabel.value = label_1_0.value;"/>
+          <label value="1.0" id="label_1_0" onMouseOver="popupLabel.value = label_1_0.value;" />
         </listcell>
         <listcell>
-          <label value="1.1" id="label_1_1" onMouseOver="popupLabel.value = label_1_1.value;"/>
+          <label value="1.1" id="label_1_1" onMouseOver="popupLabel.value = label_1_1.value;" />
         </listcell>
         <listcell>
-          <label value="1.2" id="label_1_2" onMouseOver="popupLabel.value = label_1_2.value;"/>
+          <label value="1.2" id="label_1_2" onMouseOver="popupLabel.value = label_1_2.value;" />
         </listcell>
         <listcell>
-          <label value="1.3" id="label_1_3" onMouseOver="popupLabel.value = label_1_3.value;"/>
+          <label value="1.3" id="label_1_3" onMouseOver="popupLabel.value = label_1_3.value;" />
         </listcell>
         <listcell>
-          <label value="1.4" id="label_1_4" onMouseOver="popupLabel.value = label_1_4.value;"/>
+          <label value="1.4" id="label_1_4" onMouseOver="popupLabel.value = label_1_4.value;" />
         </listcell>
-      </listitem>    </listbox>
+      </listitem>
+    </listbox>
   </window>
 </zk>

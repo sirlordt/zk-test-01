@@ -1,61 +1,60 @@
 <zk>
-  
-  <window id="windowTest02" apply="" border="normal" title="hello" width="350px" height="500px" sizable="true" >
-  
-     <style src="/test02.css" ></style>
 
-     <vlayout spacing="0">
+  <window id="windowTest02" apply="" border="normal" title="hello" width="350px" height="500px" sizable="true">
 
-     	<div vflex="1" >
+    <style src="/test02.css"></style>
 
-     		<grid id="gridData" width="100%" height="340px" class="customRowStyle01">
+    <vlayout spacing="0">
 
-     			<rows>
+      <div vflex="1">
 
-     				<row height="90px">
+        <grid id="gridData" width="100%" height="340px" class="customRowStyle01">
 
-     					<div width="100%" style="font-size:0px" sclass="divRowContainer" >
+          <rows>
 
-     						<div width="58px" height="90px" sclass="divRowIcon">
+            <row height="90px">
 
-                              <span sclass="spanRowIcon z-icon-check" />
+              <div width="100%" style="font-size:0px" sclass="divRowContainer">
 
-     						</div>
+                <div width="58px" height="90px" sclass="divRowIcon">
 
-     						<div width="calc( 100% - 88px )" height="90px" sclass="divRowInformation">
-                              
-                              <label sclass="spanRowLabel" value="Id:"/>
-                              <label sclass="spanRowValue" value="1111-1111-1111-1111-1111"/>
-                              <label sclass="spanRowLabel" value="Name:"/>
-                              <label sclass="spanRowValue" value="1111-1111-1111-1111-1111"/>
+                  <span sclass="spanRowIcon z-icon-check" />
 
-     						</div>
+                </div>
 
-     						<div width="30px" height="90px" sclass="divRowSelectedRight">
+                <div width="calc( 100% - 88px )" height="90px" sclass="divRowInformation">
 
-     							<label sclass="spanRowSelectedRight" value="Hola"/>
+                  <label sclass="spanRowLabel" value="Id:" />
+                  <label sclass="spanRowValue" value="1111-1111-1111-1111-1111" />
+                  <label sclass="spanRowLabel" value="Name:" />
+                  <label sclass="spanRowValue" value="1111-1111-1111-1111-1111" />
 
-     						</div>
+                </div>
 
-     					</div>
+                <div width="30px" height="90px" sclass="divRowSelectedRight">
 
-     				</row>
+                  <label sclass="spanRowSelectedRight" value="Hola" />
 
-     			</rows>
+                </div>
 
-     		</grid>
+              </div>
 
-     	</div>
+            </row>
 
-     	<div height="40px">
+          </rows>
 
-     		<button id="btnShowModel" label="Show modal"
-     			onClick="windowTest02.doModal()" />
+        </grid>
 
-     	</div>
+      </div>
 
-     </vlayout>
+      <div height="40px">
 
-  </window> 
+        <button id="btnShowModel" label="Show modal" onClick="windowTest02.doModal()" />
 
-</zk> 
+      </div>
+
+    </vlayout>
+
+  </window>
+
+</zk>
