@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE zk>
+<language-addon>
+    <addon-name>myapp</addon-name>
+    <language-name>xul/html</language-name>
+    <component>
+        <component-name>custommenu</component-name>
+        <extends>menu</extends>
+        <component-class>org.test.zk.menu.CustomMenu</component-class>
+         
+    </component>
+</language-addon>

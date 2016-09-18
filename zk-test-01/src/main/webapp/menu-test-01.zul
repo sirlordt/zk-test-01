@@ -1,0 +1,90 @@
+<zk>
+
+    <div apply="org.test.zk.menu.CController01">
+
+    	<window id="windowMenuTest01" width="500px" height="400px" title="Menu test 01" border="normal">
+
+          <menubar id="menubarTes01">
+          
+            <menu id="menuNew" label="Menu New"/> 
+            <menu id="menuUndo" label="Menu Undo"/> 
+            <menu id="menuCut" label="Menu Cut"/> 
+            <menu id="menuCopy" label="Menu Copy"/> 
+            <menu id="menuPaste" label="Menu Paste"/> 
+          
+          </menubar>  
+
+          <toolbar id="toolbarTest01">
+          
+            <toolbarbutton id="buttonNew" label="New" tooltiptext="New"/> <!-- onMouseOver='windowMenuTest01.doModal();' -->
+            <toolbarbutton id="buttonUndo" label="Undo" tooltiptext="Undo"/>
+            <toolbarbutton id="buttonCut" label="Cut" tooltiptext="Cut"/>
+            <toolbarbutton id="buttonCopy" label="Copy" tooltiptext="Copy"/>
+            <toolbarbutton id="buttonPaste" label="Paste" tooltiptext="Paste"/>
+         
+          </toolbar>
+    
+    	  <button label="Do modal" id="btnDoModal01"  /> <!-- onClick="windowMenuTest01.doModal();" -->
+
+    	  <div id="divTest01" width="250px" height="250px" style="border: 1px solid red;">
+
+    	  	<button label="Do modal" id="btnDoModal02"  /> <!-- onClick="windowMenuTest01.doModal();" -->
+   
+            <textbox id="textboxTest01" width="100px" value="Textbox Test01" />
+
+    	  </div>
+
+    	</window>
+
+    	<menupopup id="menupopupCustom" sclass="customMenuPopup">
+    		
+    		
+
+    	</menupopup>
+
+    	<menupopup id="menupopupNew">
+    		
+    		<menuitem label="Menu 01" />
+    		<menuitem label="Menu 02" />
+
+    	</menupopup>
+
+    	<menupopup id="menupopupUndo">
+    		
+    		<menuitem label="Menu 03" />
+    		<menuitem label="Menu 04" />
+
+    	</menupopup>
+
+    	<menupopup id="menupopupCut">
+    		
+    		<menuitem label="Menu 05" />
+    		<menuitem label="Menu 06" />
+
+    	</menupopup>
+
+    	<menupopup id="menupopupCopy">
+    		
+    		<menuitem label="Menu 07" />
+    		<menuitem label="Menu 08" />
+
+    	</menupopup>
+
+    	<menupopup id="menupopupPaste">
+    		
+    		<menuitem label="Menu 09" />
+    		<menuitem label="Menu 10" />
+
+    	</menupopup>
+
+    	<popup id="popupTest01">
+
+    		<button label="Do modal" id="btnDoModal03"  /> <!-- onClick="windowMenuTest01.doModal();" -->
+
+    	</popup>
+    	
+
+    </div>
+
+
+</zk>

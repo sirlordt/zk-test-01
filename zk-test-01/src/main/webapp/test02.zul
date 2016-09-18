@@ -1,0 +1,61 @@
+<zk>
+  
+  <window id="windowTest02" apply="" border="normal" title="hello" width="350px" height="500px" sizable="true" >
+  
+     <style src="/test02.css" ></style>
+
+     <vlayout spacing="0">
+
+     	<div vflex="1" >
+
+     		<grid id="gridData" width="100%" height="340px" class="customRowStyle01">
+
+     			<rows>
+
+     				<row height="90px">
+
+     					<div width="100%" style="font-size:0px" sclass="divRowContainer" >
+
+     						<div width="58px" height="90px" sclass="divRowIcon">
+
+                              <span sclass="spanRowIcon z-icon-check" />
+
+     						</div>
+
+     						<div width="calc( 100% - 88px )" height="90px" sclass="divRowInformation">
+                              
+                              <label sclass="spanRowLabel" value="Id:"/>
+                              <label sclass="spanRowValue" value="1111-1111-1111-1111-1111"/>
+                              <label sclass="spanRowLabel" value="Name:"/>
+                              <label sclass="spanRowValue" value="1111-1111-1111-1111-1111"/>
+
+     						</div>
+
+     						<div width="30px" height="90px" sclass="divRowSelectedRight">
+
+     							<label sclass="spanRowSelectedRight" value="Hola"/>
+
+     						</div>
+
+     					</div>
+
+     				</row>
+
+     			</rows>
+
+     		</grid>
+
+     	</div>
+
+     	<div height="40px">
+
+     		<button id="btnShowModel" label="Show modal"
+     			onClick="windowTest02.doModal()" />
+
+     	</div>
+
+     </vlayout>
+
+  </window> 
+
+</zk> 

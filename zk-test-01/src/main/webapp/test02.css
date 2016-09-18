@@ -1,0 +1,134 @@
+
+
+div.z-grid.customRowStyle01 .z-row .z-row-inner, 
+div.z-grid.customRowStyle01 .z-row .z-cell {
+
+  border-left: none;
+  overflow: hidden;
+	
+}
+
+div.z-grid.customRowStyle01 .z-column-content, 
+div.z-grid.customRowStyle01 .z-row-content, 
+div.z-grid.customRowStyle01 .z-group-content, 
+div.z-grid.customRowStyle01 .z-groupfoot-content, 
+div.z-grid.customRowStyle01 .z-footer-content {
+ 
+  padding: 0;
+ 
+}
+
+div.z-grid.customRowStyle01 div.z-grid-body > table {
+  
+  border-collapse: separate;
+  border-spacing: 0;
+  
+}
+
+div.z-grid.customRowStyle01 .z-row-inner, 
+div.z-grid.customRowStyle01 .z-cell {
+  
+  background: transparent;
+  
+}
+
+div.z-grid.customRowStyle01 .z-grid-odd > .z-row-inner, 
+div.z-grid.customRowStyle01 .z-grid-odd > .z-cell {
+  
+  background: transparent;
+  
+}
+
+/* Row element */
+div.z-grid.customRowStyle01 div.divRowContainer {
+
+  
+
+}
+
+div.z-grid.customRowStyle01 div.divRowIcon {
+
+  display:inline-block;
+  position: relative;
+  background-color: #00a65a;
+  border: 1px solid #00a65a;
+  overflow: hidden; /*Very important for not deform the row*/
+
+}
+
+div.z-grid.customRowStyle01 span.spanRowIcon {
+
+  position: absolute;	
+	
+  font-size: 43px;
+  color: white;
+
+  left: 8px;
+  top: 30px;
+
+}
+
+div.z-grid.customRowStyle01 div.divRowInformation {
+
+  display:inline-block;
+  position: relative;
+  border: 1px solid #00a65a;
+  overflow: hidden; /*Very important for not deform the row*/
+
+}
+
+div.z-grid.customRowStyle01 div.divRowInformation span.spanRowLabel {
+
+  display: block;	
+  overflow: hidden;
+  font-size: 12px;
+  max-width: calc( 100% - 20px );
+  white-space:nowrap;
+  text-overflow:ellipsis;
+
+  margin: 0px 10px 0px 10px;
+  height: 16px;
+
+}
+
+div.z-grid.customRowStyle01 div.divRowInformation span.spanRowLabel:first-child {
+
+  display: block;	
+  overflow: hidden;
+  font-size: 12px;
+  max-width: calc( 100% - 20px );
+  white-space: nowrap;
+  text-overflow:ellipsis;
+
+  margin: 10px 10px 0px 10px;
+  height: 16px;
+
+}
+
+div.z-grid.customRowStyle01 div.divRowInformation span.spanRowValue {
+
+  display: block;	
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: bold;
+  max-width: calc( 100% - 20px );
+  white-space:nowrap;
+  text-overflow:ellipsis;
+
+  margin: 0px 10px 0px 10px;
+  height: 18px;
+
+}
+
+div.z-grid.customRowStyle01 div.divRowSelectedRight {
+
+  display:inline-block;
+  overflow: hidden; /*Very important for not deform the row*/
+
+}
+
+div.z-grid.customRowStyle01 span.spanRowSelectedRight {
+
+  
+
+}
