@@ -1,0 +1,24 @@
+<zk>
+
+  <!-- apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('org.test.zk.menu.TestViewModel')" -->
+  <window id="win" xmlns:n="native" xmlns:w="http://www.zkoss.org/2005/zk/client" apply="org.test.zk.menu.CTest04Controller" >
+  
+    <script>
+    
+       function open() { 
+    
+           var data = "122323"; 
+           alert( data ); 
+           zAu.send( new zk.Event( zk.Widget.$('$btnOpen'), 'onTest', null, {toServer:true} ) );
+            
+        }
+    
+    </script>
+  
+    <n:button onclick="zAu.send(new zk.Event(zk.Widget.$('$win'), 'onValidate', {'my key' : 'some key'}));">Send simple string</n:button>
+    <n:button onclick="var data = {'f1': 'some'};zAu.send(new zk.Event(zk.Widget.$('$win'), 'onValidate', {'':{'my key' : data}}));">Send JSON object</n:button>
+    <button label="Hit ME" w:onClick="open();" id="btnOpen"></button>
+  
+  </window>
+  
+</zk>

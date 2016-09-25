@@ -1,0 +1,54 @@
+<zk>
+  
+  <!-- 
+  <window id="win" xmlns:n="native" xmlns:w="http://www.zkoss.org/2005/zk/client" apply="org.test.zk.menu.CTest04Controller">
+
+    <script>
+    
+      function open() { 
+         
+         var data = "122323"; 
+         alert(data); 
+         zAu.send(new zk.Event( zk.Widget.$('$btnOpen'), 'onTest', null, {toServer:true} ) ); 
+      
+      }
+    
+    </script>
+    
+    <n:button onclick="zAu.send(new zk.Event(zk.Widget.$('$win'), 'onValidate', {'my key' : 'some key'}));">Send simple string</n:button>
+    <n:button onclick="var data = {'f1': 'some'};zAu.send(new zk.Event(zk.Widget.$('$win'), 'onValidate', {'':{'my key' : data}}));">Send JSON object</n:button>
+    <button label="Hit ME" w:onClick="open();" id="btnOpen"></button>
+
+  </window>
+  -->
+   
+  <!-- --> 
+  <window id="winClient" xmlns:n="native" xmlns:w="http://www.zkoss.org/2005/zk/client" apply="org.test.zk.menu.CTest04Controller" width="400px" height="400px">
+  
+    <script>
+      
+      function open() { 
+      
+          var data = "122323"; 
+          alert(data); 
+          zAu.send( new zk.Event( zk.Widget.$( '$btnOpen' ), 'onTest', null, { toServer:true } ) ); 
+      
+      }
+      
+      function onClickDivTest02() { 
+      
+          var data = "99999"; 
+          alert(data); 
+          zAu.send( new zk.Event( zk.Widget.$( '$divTest02' ), 'onClickDiv', {'data' : data}, { toServer:true } ) ); 
+      
+      }
+
+    </script>
+    <n:button onclick="zAu.send( new zk.Event( zk.Widget.$('$winClient'), 'onValidate', {'my key' : 'some key'} ) );">Send simple string</n:button>
+    <n:button onclick="var data = {'f1': 'some'};zAu.send( new zk.Event( zk.Widget.$('$winClient'), 'onValidate', {'':{'my key' : data}} ) );">Send JSON object</n:button>
+    <button label="Hit ME" w:onClick="open();" id="btnOpen"></button>
+    <div id="divTest02" style="width:150px;height:150px;border: 1px solid red;" w:onClick="onClickDivTest02()" />
+  
+  </window>
+   
+</zk>
