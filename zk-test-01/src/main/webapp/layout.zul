@@ -1,0 +1,85 @@
+<zk xmlns:w="client">
+  
+  <div width="100%" height="40px" >
+    
+  </div> 
+
+  <borderlayout width="100%" height="88%">
+  
+    <west title="West" size="25%" flex="true" maxsize="250" splittable="true" collapsible="true">
+               
+      <div style="background:#B8D335">
+      
+        <label value="25%" style="color:white;font-size:50px" />
+      
+      </div>
+                
+    </west>
+    
+    <center border="none" flex="true">
+        
+      <div style="background:#E6D92C">
+      
+        <label value="25%" style="color:white;font-size:50px" />
+        
+      </div>
+                
+    </center>
+    
+    <east width="40px" border="none" flex="true">
+      
+      <label value="Here is a non-border" style="color:gray;font-size:30px" />
+      
+    </east>
+  
+  </borderlayout>
+
+
+  <div apply="org.example.zk.CController" width="100%" height="40px" >
+
+    <popup id="popupPanel" width="150px">
+      
+      <groupbox closable="false">
+        
+        <caption>This is Popup</caption>
+        <html><![CDATA[ Contact Us : info@zkoss.org ]]></html>
+        
+      </groupbox>
+      
+    </popup>
+        
+    <div width="100%" >
+    
+      <button id="buttonTask01" label="Task 01" style="float: right;" popup="popupNotification, position=before_end, type=toggle"/> 
+    
+    </div>
+    
+    <window id="windowNotification" sclass="z-window-not-movable" title="Notification" mode="overlapped" border="normal" width="350px" height="350px" position="left bottom" sizable="false" maximizable="false" minimizable="false" closable="false">
+    
+           <attribute w:name="bind_"><![CDATA[
+            function (a, b, c) {
+                if (!this.$class.ignoremoveOverridden) {
+                    this.$class.ignoremoveOverridden = true;
+                    var oldImove = this.$class._ignoremove;
+                    this.$class._ignoremove = function (dg, pointer, evt) {
+                        var wgt = dg.control;
+                        if (jq(wgt.$n()).hasClass('z-window-not-movable')) {
+                            return true;
+                        }
+                        return oldImove.apply(wgt, arguments);
+                    }
+                }
+                this.$bind_(a, b, c);
+            }
+        ]]></attribute>    
+    </window>
+    
+    <popup id="popupNotification" width="350px" height="350px" >
+    
+        
+    
+    </popup> 
+    
+  </div> 
+  
+</zk>       
