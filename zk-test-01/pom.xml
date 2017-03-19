@@ -13,6 +13,8 @@
       <zk.version>8.0.2-Eval</zk.version>
       <zkgmap.version>3.0.3</zkgmap.version>
       <commons-io>2.4</commons-io>
+      <jackson.version>2.7.5</jackson.version>
+      <jettison.version>1.3.7</jettison.version>
       <maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
       <packname>-${project.version}-FL-${maven.build.timestamp}</packname>
    
@@ -156,6 +158,56 @@
       
       </dependency>
       
+      <!-- Jackson json library start --> 
+      <dependency>
+      
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>${jackson.version}</version>
+      
+      </dependency>
+  
+      <dependency>
+      
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+        <version>${jackson.version}</version>
+  
+      </dependency>
+  
+      <dependency>
+  
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
+        <version>${jackson.version}</version>
+        
+      </dependency>
+  
+      <dependency>
+      
+        <groupId>com.fasterxml.jackson.datatype</groupId>
+        <artifactId>jackson-datatype-jsr310</artifactId>
+        <version>${jackson.version}</version>
+  
+      </dependency>
+  
+      <dependency>
+  
+        <groupId>com.fasterxml.jackson.dataformat</groupId>
+        <artifactId>jackson-dataformat-xml</artifactId>
+        <version>${jackson.version}</version>
+        
+      </dependency>
+      <!-- Jackson json library end --> 
+      
+      <dependency>
+  
+        <groupId>org.codehaus.jettison</groupId>
+        <artifactId>jettison</artifactId>
+        <version>${jettison.version}</version>
+  
+      </dependency>
+          
    </dependencies>
    
    <build>

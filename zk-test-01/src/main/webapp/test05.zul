@@ -1,0 +1,13 @@
+<zk>
+
+  <window apply="org.example.zk.CTest05Controller" border="normal" title="hello" width="400px" height="350px">
+
+    <button label="Test01" id="buttonTest01">
+    
+      
+    
+    </button>
+  
+  </window>
+
+</zk>  
